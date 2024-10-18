@@ -1,0 +1,13 @@
+name: Actions WorkFlow
+
+on:
+  push:
+
+jobs:
+  DISPLAY_ACTIONS:
+    runs-on: ubuntu-latest
+    steps:
+      - name: List Files
+        run: |
+          pwd
+          ls -a
